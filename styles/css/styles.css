@@ -1,53 +1,45 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
+  font-family: 'Roboto, Noto Sans', Sans-Serif;
   margin: 0 0 0 0; }
+  body h2,
+  body h3 {
+    text-align: center; }
 
 header {
   display: flex;
   background-color: #99ff66;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: space-between;
-  flex-grow: 2; }
-
-#page-title {
-  flex-basis: 20%;
-  background-color: #9999ff;
-  padding-left: 3rem; }
-
-nav {
-  background-color: #ffff66;
-  flex-basis: 80%; }
+  justify-content: flex-start; }
+  header #page-title {
+    flex-basis: 20%;
+    background-color: #9999ff;
+    padding-left: 3rem; }
+  header nav {
+    background-color: #ffff66;
+    flex-basis: 80%; }
 
 main {
   display: flex;
   flex-flow: row;
   align-items: stretch;
   flex-grow: 15; }
-
-#players {
-  background-color: #d9d9d9;
-  flex-basis: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-#schedule {
-  background-color: #66ffff;
-  flex-basis: 80%; }
+  main #players {
+    background-color: #d9d9d9;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main #players .icon {
+      height: 1rem;
+      width: 1rem; }
+  main #schedule {
+    background-color: #66ffff;
+    flex-basis: 80%; }
 
 footer {
   background-color: #ff99ff;
-  flex-grow: 1; }
-
-.captain,
-.ringer {
-  height: 1rem;
-  width: 1rem; }
-
-h2,
-h3 {
-  text-align: center; }
+  flex-grow: 1;
+  text-align: center;
+  font-size: 0.8rem; }

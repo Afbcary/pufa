@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "tests not yet implemented",
-    "sass": "node-sass -rw styles/scss -o styles/css"
+    "sass": "node-sass -rw styles/scss -o styles/css",
+    "start-server": "./node_modules/polymer-cli/bin/polymer.js serve",
+    "start": "npm run sass & npm run start-server"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,8 @@
   },
   "homepage": "https://github.com/Afbcary/pufa#readme",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "@polymer/paper-button": "^3.0.1",
+    "node-sass": "^4.12.0",
+    "polymer-cli": "^1.9.11"
   }
 }
