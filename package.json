@@ -1,0 +1,23 @@
+{
+  "name": "mufa-2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tests not yet implemented",
+    "sass": "node-sass -rw styles/scss -o styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Afbcary/pufa.git"
+  },
+  "author": "acary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Afbcary/pufa/issues"
+  },
+  "homepage": "https://github.com/Afbcary/pufa#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
