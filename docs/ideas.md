@@ -8,8 +8,10 @@
 - cache webscraped data
 - give attribution
 - player attendence feature
-- last game in schedule is larger with additional information
-- performance rating graph
+- schedule
+  - last game in schedule is larger with additional information
+  - performance rating graph
+  - all games vs next games view
 
 ## Second page - Generate via team
 - access page by 

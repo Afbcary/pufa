@@ -7,6 +7,7 @@
     <title>MUFA Team Page Redux</title>
 
     <link rel="stylesheet" href="styles/css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
     <header>
@@ -90,7 +91,24 @@
         </ul>
       </section>
       <section id="schedule">
-        schedule section
+          <div class="mdc-tab-bar" role="tablist">
+              <div class="mdc-tab-scroller">
+                <div class="mdc-tab-scroller__scroll-area">
+                  <div class="mdc-tab-scroller__scroll-content">
+                    <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                      <span class="mdc-tab__content">
+                        <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
+                        <span class="mdc-tab__text-label">Favorites</span>
+                      </span>
+                      <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                      </span>
+                      <span class="mdc-tab__ripple"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
         <script
           type="module"
           src="node_modules/@polymer/paper-button/paper-button.js"
@@ -123,5 +141,6 @@
         >
       </div>
     </footer>
+    <script src="js/app.js" type="module"></script>
   </body>
 </html>
