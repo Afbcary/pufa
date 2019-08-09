@@ -7,10 +7,31 @@
     <title>MUFA Team Page Redux</title>
 
     <link rel="stylesheet" href="styles/css/styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <header>
+  <body class="mdc-typography">
+    <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+      <div class="mdc-top-app-bar__row header-mixin">
+        <section
+          class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"
+        >
+          <button
+            class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+          >
+            menu
+          </button>
+          <span class="mdc-top-app-bar__title">Respiratory Discstress</span>
+        </section>
+      </div>
+    </header>
+    <!-- <header>
       <div id="page-title">
         <h2>Respiratory Discstress</h2>
         <p>Swiss Group: 2</p>
@@ -18,128 +39,726 @@
         <p>Performance Rating: 1789</p>
       </div>
       <nav>site navigation</nav>
-    </header>
-    <main>
+    </header> -->
+    <main class= "mdc-top-app-bar--fixed-adjust">
       <section id="players">
         <h2>Players</h2>
-        <h3>11 Women</h3>
-        <ul>
-          <li>Armstrong, Lauren</li>
-          <li>Berman, Wensday</li>
-          <li>
-            <img
-              src="img/star-shape-award-symbol.svg"
-              title="Ringer"
-              alt="Ringer"
-              class="ringer icon"
-            />
-            Conley, Hannah
-          </li>
-          <li>Delannay, Martine</li>
-          <li>
-            <img
-              src="img/star-shape-award-symbol.svg"
-              title="Ringer"
-              alt="Ringer"
-              class="ringer icon"
-            />
-            Idun, Ama
-          </li>
-          <li>Just, Elizabeth</li>
-          <li>Lotlikar, Sushmita</li>
-          <li>O'Donnell, Laurie</li>
-          <li>Piper, Laurel</li>
-          <li>
-            <img
-              src="img/clipboard.svg"
-              title="Captain"
-              alt="Captain"
-              class="captain icon"
-            />
-            Ravelo, Laurel
-          </li>
-          <li>Webster, Jessica</li>
-        </ul>
-        <h3>10 Men</h3>
-        <ul>
-          <li>Cary, Austin</li>
-          <li>McElroy, Scott</li>
-          <li>Mohamed, Liban</li>
-          <li>
-            <img
-              src="img/clipboard.svg"
-              title="Captain"
-              alt="Captain"
-              class="captain icon"
-            />
-            Probst, Daniel
-          </li>
-          <li>Ravelo, Edu</li>
-          <li>Ryan, Nick</li>
-          <li>
-            <img
-              src="img/star-shape-award-symbol.svg"
-              title="Ringer"
-              alt="Ringer"
-              class="ringer icon"
-            />
-            Ryan, Roman
-          </li>
-          <li>Smearsoll, Kevin</li>
-          <li>Speicher, Jordan</li>
-          <li>Wala, Jeff</li>
-        </ul>
+        <div class="gender">
+          <h3>11 Women</h3>
+          <ul>
+            <li>Armstrong, Lauren</li>
+            <li>Berman, Wensday</li>
+            <li>
+              <span
+                class="mdc-tab__icon material-icons icon ringer"
+                aria-hidden="true"
+                alt="Ringer"
+                title="Ringer"
+                >graphic_eq</span
+              >
+              Conley, Hannah
+            </li>
+            <li>Delannay, Martine</li>
+            <li>
+              <span
+                class="mdc-tab__icon material-icons icon ringer"
+                aria-hidden="true"
+                alt="Ringer"
+                title="Ringer"
+                >graphic_eq</span
+              >
+              Idun, Ama
+            </li>
+            <li>Just, Elizabeth</li>
+            <li>Lotlikar, Sushmita</li>
+            <li>O'Donnell, Laurie</li>
+            <li>Piper, Laurel</li>
+            <li>
+              <!-- <img
+                src="img/clipboard.svg"
+                title="Captain"
+                alt="Captain"
+                class="captain icon"
+              /> -->
+              <span
+                class="mdc-tab__icon material-icons icon captain"
+                aria-hidden="true"
+                alt="Captain"
+                title="Captain"
+                >perm_identity</span
+              >
+              Ravelo, Laurel
+            </li>
+            <li>Webster, Jessica</li>
+          </ul>
+        </div>
+        <div class="gender">
+          <h3>10 Men</h3>
+          <ul>
+            <li>Cary, Austin</li>
+            <li>McElroy, Scott</li>
+            <li>Mohamed, Liban</li>
+            <li>
+              <span
+                class="mdc-tab__icon material-icons icon captain"
+                aria-hidden="true"
+                alt="Captain"
+                title="Captain"
+                >perm_identity</span
+              >
+              Probst, Daniel
+            </li>
+            <li>Ravelo, Edu</li>
+            <li>Ryan, Nick</li>
+            <li>
+              <span
+                class="mdc-tab__icon material-icons icon ringer"
+                aria-hidden="true"
+                alt="Ringer"
+                title="Ringer"
+                >graphic_eq</span
+              >
+              Ryan, Roman
+            </li>
+            <li>Smearsoll, Kevin</li>
+            <li>Speicher, Jordan</li>
+            <li>Wala, Jeff</li>
+          </ul>
+        </div>
       </section>
       <section id="schedule">
-          <div class="mdc-tab-bar" role="tablist">
-              <div class="mdc-tab-scroller">
-                <div class="mdc-tab-scroller__scroll-area">
-                  <div class="mdc-tab-scroller__scroll-content">
-                    <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
-                      <span class="mdc-tab__content">
-                        <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
-                        <span class="mdc-tab__text-label">Favorites</span>
-                      </span>
-                      <span class="mdc-tab-indicator mdc-tab-indicator--active">
-                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-                      </span>
-                      <span class="mdc-tab__ripple"></span>
-                    </button>
-                  </div>
-                </div>
+        <div class="mdc-tab-bar" role="tablist">
+          <div class="mdc-tab-scroller">
+            <div class="mdc-tab-scroller__scroll-area">
+              <div class="mdc-tab-scroller__scroll-content">
+                <button
+                  class="mdc-tab mdc-tab--active"
+                  role="tab"
+                  aria-selected="true"
+                  tabindex="0"
+                >
+                  <span class="mdc-tab__content">
+                    <span
+                      class="mdc-tab__icon material-icons"
+                      aria-hidden="true"
+                      >calendar_today</span
+                    >
+                    <span class="mdc-tab__text-label">Schedule</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                    <span
+                      class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                    ></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+                <button
+                  class="mdc-tab mdc-tab--active"
+                  role="tab"
+                  aria-selected="true"
+                  tabindex="0"
+                >
+                  <span class="mdc-tab__content">
+                    <span
+                      class="mdc-tab__icon material-icons"
+                      aria-hidden="true"
+                      >navigate_next</span
+                    >
+                    <span class="mdc-tab__text-label">Next Game</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                    <span
+                      class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                    ></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
               </div>
             </div>
-        <script
-          type="module"
-          src="node_modules/@polymer/paper-button/paper-button.js"
-        ></script>
-        <paper-button raised class="indigo">raised</paper-button>
+          </div>
+        </div>
+        <div class="mdc-data-table">
+          <table class="mdc-data-table__table" aria-label="Schedule">
+            <thead>
+              <tr class="mdc-data-table__header-row">
+                <th
+                  class="mdc-data-table__header-cell"
+                  role="columnheader"
+                  scope="col"
+                >
+                  Date
+                </th>
+                <th
+                  class="mdc-data-table__header-cell"
+                  role="columnheader"
+                  scope="col"
+                >
+                  Win or Loss
+                </th>
+                <th
+                  class="mdc-data-table__header-cell"
+                  role="columnheader"
+                  scope="col"
+                >
+                  Score
+                </th>
+                <th
+                  class="mdc-data-table__header-cell"
+                  role="columnheader"
+                  scope="col"
+                >
+                  Opp. Score
+                </th>
+                <th
+                  class="mdc-data-table__header-cell"
+                  role="columnheader"
+                  scope="col"
+                >
+                  Opponent
+                </th>
+                <th
+                  class="mdc-data-table__header-cell"
+                  role="columnheader"
+                  scope="col"
+                >
+                  Self Rtg
+                </th>
+                <th
+                  class="mdc-data-table__header-cell"
+                  role="columnheader"
+                  scope="col"
+                >
+                  Perf Rtg
+                </th>
+                <th
+                  class="mdc-data-table__header-cell"
+                  role="columnheader"
+                  scope="col"
+                >
+                  Field
+                </th>
+                <th
+                  class="mdc-data-table__header-cell"
+                  role="columnheader"
+                  scope="col"
+                >
+                  Game Time
+                </th>
+                <th
+                  class="mdc-data-table__header-cell"
+                  role="columnheader"
+                  scope="col"
+                >
+                  Color
+                </th>
+              </tr>
+            </thead>
+            <tbody class="mdc-data-table__content">
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">6/4/2019 (T)</td>
+                <td class="mdc-data-table__cell">
+                  W
+                </td>
+                <td class="mdc-data-table__cell">12&nbsp;</td>
+                <td class="mdc-data-table__cell">7&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6793&amp;leagueid=688"
+                    >Earth Ninjas (4-13)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">3</td>
+                <td class="mdc-data-table__cell">1193</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=1162&amp;leagueid=688"
+                    >Northstar 2</a
+                  >
+                  (<a href="http://goo.gl/maps/eof3W">Map</a>) (<a
+                    href="http://www.mufa.org/mufa/wp-content/uploads/2017/06/NorthStar.jpg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">6:00</td>
+                <td class="mdc-data-table__cell">Black</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">6/6/2019 (R)</td>
+                <td class="mdc-data-table__cell">
+                  L
+                </td>
+                <td class="mdc-data-table__cell">3&nbsp;</td>
+                <td class="mdc-data-table__cell">13&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6875&amp;leagueid=688"
+                    >[untitled] (13-4)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">2</td>
+                <td class="mdc-data-table__cell">2572</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=1170&amp;leagueid=688"
+                    >Sandstone 2</a
+                  >
+                  (<a href="http://goo.gl/maps/X1mD4">Map</a>) (<a
+                    href="http://www.mufa.org/mufa/wp-content/uploads/2017/06/sandstone.jpg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">7:30</td>
+                <td class="mdc-data-table__cell">Silver / white</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">6/11/2019 (T)</td>
+                <td class="mdc-data-table__cell">
+                  W
+                </td>
+                <td class="mdc-data-table__cell">11&nbsp;</td>
+                <td class="mdc-data-table__cell">8&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6905&amp;leagueid=688"
+                    >Disc-it and Gravy (9-8)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">5</td>
+                <td class="mdc-data-table__cell">1401</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=666&amp;leagueid=688"
+                    >Olbrich 1</a
+                  >
+                  (<a
+                    href="https://www.google.com/maps/place/Olbrich+Park/@43.091589,-89.333368,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x50edd272dec9e01a"
+                    >Map</a
+                  >) (<a href="http://www.mufa.org/images/Olbrich.jpeg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">6:00</td>
+                <td class="mdc-data-table__cell"></td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">6/13/2019 (R)</td>
+                <td class="mdc-data-table__cell">
+                  W
+                </td>
+                <td class="mdc-data-table__cell">13&nbsp;</td>
+                <td class="mdc-data-table__cell">5&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6858&amp;leagueid=688"
+                    >Callahan Job (11-5)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">2</td>
+                <td class="mdc-data-table__cell">2100</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=666&amp;leagueid=688"
+                    >Olbrich 1</a
+                  >
+                  (<a
+                    href="https://www.google.com/maps/place/Olbrich+Park/@43.091589,-89.333368,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x50edd272dec9e01a"
+                    >Map</a
+                  >) (<a href="http://www.mufa.org/images/Olbrich.jpeg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">7:30</td>
+                <td class="mdc-data-table__cell">1st Place Gold baby</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">6/18/2019 (T)</td>
+                <td class="mdc-data-table__cell">
+                  W
+                </td>
+                <td class="mdc-data-table__cell">13&nbsp;</td>
+                <td class="mdc-data-table__cell">7&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6944&amp;leagueid=688"
+                    >It's Circular - The Comeback Tour (9-6-2)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">2</td>
+                <td class="mdc-data-table__cell">1665</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=1278&amp;leagueid=688"
+                    >Stoner Prairie Z</a
+                  >
+                  (<a
+                    href="http://www.mufa.org/mufa/wp-content/uploads/2019/06/Stoner.jpg"
+                    >Map</a
+                  >) (<a
+                    href="http://www.mufa.org/mufa/wp-content/uploads/2019/06/Stoner.jpg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">6:00</td>
+                <td class="mdc-data-table__cell">White</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">6/20/2019 (R)</td>
+                <td class="mdc-data-table__cell">
+                  L
+                </td>
+                <td class="mdc-data-table__cell">12&nbsp;</td>
+                <td class="mdc-data-table__cell">13&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6820&amp;leagueid=688"
+                    >The Cursh (8-9)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">2</td>
+                <td class="mdc-data-table__cell">1871</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=1165&amp;leagueid=688"
+                    >Northstar 5</a
+                  >
+                  (<a href="http://goo.gl/maps/eof3W">Map</a>) (<a
+                    href="http://www.mufa.org/mufa/wp-content/uploads/2017/06/NorthStar.jpg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">7:30</td>
+                <td class="mdc-data-table__cell">Black</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">6/25/2019 (T)</td>
+                <td class="mdc-data-table__cell">
+                  L
+                </td>
+                <td class="mdc-data-table__cell">6&nbsp;</td>
+                <td class="mdc-data-table__cell">13&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6882&amp;leagueid=688"
+                    >Aero Buddies (8-9)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">3</td>
+                <td class="mdc-data-table__cell">1942</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=810&amp;leagueid=688"
+                    >Manchester 3</a
+                  >
+                  (<a
+                    href="https://www.google.com/maps/place/Manchester+Park/@43.0126,-89.492822,17z/data=!3m1!4b1!4m2!3m1!1s0x8807b1e75f094931:0x4a4bc7d20bce92d9"
+                    >Map</a
+                  >) (<a href="http://mufa.org/images/Manchester.jpeg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">7:30</td>
+                <td class="mdc-data-table__cell"></td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">7/2/2019 (T)</td>
+                <td class="mdc-data-table__cell">
+                  L
+                </td>
+                <td class="mdc-data-table__cell">8&nbsp;</td>
+                <td class="mdc-data-table__cell">12&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6871&amp;leagueid=688"
+                    >Princess Mybo (9-8)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">1</td>
+                <td class="mdc-data-table__cell">2047</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=1161&amp;leagueid=688"
+                    >Northstar 1</a
+                  >
+                  (<a href="http://goo.gl/maps/eof3W">Map</a>) (<a
+                    href="http://www.mufa.org/mufa/wp-content/uploads/2017/06/NorthStar.jpg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">7:30</td>
+                <td class="mdc-data-table__cell">Maroon</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">7/9/2019 (T)</td>
+                <td class="mdc-data-table__cell">
+                  L
+                </td>
+                <td class="mdc-data-table__cell">10&nbsp;</td>
+                <td class="mdc-data-table__cell">13&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6932&amp;leagueid=688"
+                    >Dustin’s Joner (11-6)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">4</td>
+                <td class="mdc-data-table__cell">1858</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=1170&amp;leagueid=688"
+                    >Sandstone 2</a
+                  >
+                  (<a href="http://goo.gl/maps/X1mD4">Map</a>) (<a
+                    href="http://www.mufa.org/mufa/wp-content/uploads/2017/06/sandstone.jpg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">6:00</td>
+                <td class="mdc-data-table__cell">Ice Blue</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">7/11/2019 (R)</td>
+                <td class="mdc-data-table__cell">
+                  L
+                </td>
+                <td class="mdc-data-table__cell">10&nbsp;</td>
+                <td class="mdc-data-table__cell">13&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6756&amp;leagueid=688"
+                    >Exit 69 (10-7)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">2</td>
+                <td class="mdc-data-table__cell">1766</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=1231&amp;leagueid=688"
+                    >Blackhawk 1</a
+                  >
+                  (<a href="http://goo.gl/maps/sN4dB">Map</a>) (<a
+                    href="http://www.mufa.org/images/blackhawk.jpg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">7:30</td>
+                <td class="mdc-data-table__cell">Gold</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">7/16/2019 (T)</td>
+                <td class="mdc-data-table__cell">
+                  W
+                </td>
+                <td class="mdc-data-table__cell">13&nbsp;</td>
+                <td class="mdc-data-table__cell">9&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6827&amp;leagueid=688"
+                    >Huckleberry Hounds (8-8-1)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">2</td>
+                <td class="mdc-data-table__cell">1732</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=666&amp;leagueid=688"
+                    >Olbrich 1</a
+                  >
+                  (<a
+                    href="https://www.google.com/maps/place/Olbrich+Park/@43.091589,-89.333368,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x50edd272dec9e01a"
+                    >Map</a
+                  >) (<a href="http://www.mufa.org/images/Olbrich.jpeg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">7:30</td>
+                <td class="mdc-data-table__cell">Tejas Orange</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">7/18/2019 (R)</td>
+                <td class="mdc-data-table__cell">
+                  W
+                </td>
+                <td class="mdc-data-table__cell">13&nbsp;</td>
+                <td class="mdc-data-table__cell">4&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6800&amp;leagueid=688"
+                    >Dominant Fat (7-10)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">1</td>
+                <td class="mdc-data-table__cell">1676</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=795&amp;leagueid=688"
+                    >Manchester 4</a
+                  >
+                  (<a
+                    href="https://www.google.com/maps/place/Manchester+Park/@43.0126,-89.492822,17z/data=!3m1!4b1!4m2!3m1!1s0x8807b1e75f094931:0x4a4bc7d20bce92d9"
+                    >Map</a
+                  >) (<a href="http://mufa.org/images/Manchester.jpeg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">6:00</td>
+                <td class="mdc-data-table__cell">Purple</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">7/23/2019 (T)</td>
+                <td class="mdc-data-table__cell">
+                  W
+                </td>
+                <td class="mdc-data-table__cell">13&nbsp;</td>
+                <td class="mdc-data-table__cell">9&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6976&amp;leagueid=688"
+                    >SPF 30 Ash Street (7-9-1)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">3</td>
+                <td class="mdc-data-table__cell">1901</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=1321&amp;leagueid=688"
+                    >Olin 4</a
+                  >
+                  (<a
+                    href="http://www.mufa.org/mufa/wp-content/uploads/2018/06/Olin.jpg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">5:45</td>
+                <td class="mdc-data-table__cell"></td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">7/25/2019 (R)</td>
+                <td class="mdc-data-table__cell">
+                  L
+                </td>
+                <td class="mdc-data-table__cell">9&nbsp;</td>
+                <td class="mdc-data-table__cell">13&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6941&amp;leagueid=688"
+                    >Women with Baggage (9-8)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">4</td>
+                <td class="mdc-data-table__cell">1731</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=810&amp;leagueid=688"
+                    >Manchester 3</a
+                  >
+                  (<a
+                    href="https://www.google.com/maps/place/Manchester+Park/@43.0126,-89.492822,17z/data=!3m1!4b1!4m2!3m1!1s0x8807b1e75f094931:0x4a4bc7d20bce92d9"
+                    >Map</a
+                  >) (<a href="http://mufa.org/images/Manchester.jpeg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">5:45</td>
+                <td class="mdc-data-table__cell"></td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">7/30/2019 (T)</td>
+                <td class="mdc-data-table__cell">
+                  L
+                </td>
+                <td class="mdc-data-table__cell">7&nbsp;</td>
+                <td class="mdc-data-table__cell">13&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6791&amp;leagueid=688"
+                    >Mad Carls (10-7)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">3</td>
+                <td class="mdc-data-table__cell">1740</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=645&amp;leagueid=688"
+                    >Olbrich 4</a
+                  >
+                  (<a
+                    href="https://www.google.com/maps/place/Olbrich+Park/@43.091589,-89.333368,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x50edd272dec9e01a"
+                    >Map</a
+                  >) (<a href="http://www.mufa.org/images/Olbrich.jpeg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">7:15</td>
+                <td class="mdc-data-table__cell"></td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">8/1/2019 (R)</td>
+                <td class="mdc-data-table__cell">
+                  L
+                </td>
+                <td class="mdc-data-table__cell">4&nbsp;</td>
+                <td class="mdc-data-table__cell">13&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6840&amp;leagueid=688"
+                    >TASDOMORWAMPFPAS (6-11)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">1</td>
+                <td class="mdc-data-table__cell">2019</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=1166&amp;leagueid=688"
+                    >Northstar 6</a
+                  >
+                  (<a href="http://goo.gl/maps/eof3W">Map</a>) (<a
+                    href="http://www.mufa.org/mufa/wp-content/uploads/2017/06/NorthStar.jpg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">7:15</td>
+                <td class="mdc-data-table__cell">Black</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell">8/6/2019 (T)</td>
+                <td class="mdc-data-table__cell">
+                  L
+                </td>
+                <td class="mdc-data-table__cell">8&nbsp;</td>
+                <td class="mdc-data-table__cell">13&nbsp;</td>
+                <td width="200">
+                  <a
+                    href="http://sandlotsports.biz/teams/?teamId=6925&amp;leagueid=688"
+                    >Bumpy Riders (10-7)</a
+                  >
+                </td>
+                <td class="mdc-data-table__cell">4</td>
+                <td class="mdc-data-table__cell">1522</td>
+                <td class="mdc-data-table__cell">
+                  <a
+                    href="http://sandlotsports.biz/locations/?locationid=1169&amp;leagueid=688"
+                    >Sandstone 1</a
+                  >
+                  (<a href="http://goo.gl/maps/X1mD4">Map</a>) (<a
+                    href="http://www.mufa.org/mufa/wp-content/uploads/2017/06/sandstone.jpg"
+                    >Diagram</a
+                  >)
+                </td>
+                <td class="mdc-data-table__cell">5:45</td>
+                <td class="mdc-data-table__cell"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
     <footer>
       <p>
-        Data scraped from
+        Data from
         <a href="http://sandlotsports.biz" title="Sandlot Sports"
           >http://sandlotsports.biz</a
         >
       </p>
-      <div>
-        Icons made by
-        <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-          >Freepik</a
-        >
-        from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
-        is licensed by
-        <a
-          href="http://creativecommons.org/licenses/by/3.0/"
-          title="Creative Commons BY 3.0"
-          target="_blank"
-          >CC 3.0 BY</a
-        >
-      </div>
     </footer>
     <script src="js/app.js" type="module"></script>
   </body>
