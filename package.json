@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Afbcary/pufa#readme",
   "dependencies": {
     "@material/data-table": "^3.1.0",
+    "@material/list": "^3.1.0",
     "@material/tab-bar": "^3.1.0",
     "@material/top-app-bar": "^3.1.0",
     "@material/typography": "^3.1.0",

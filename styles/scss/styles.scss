@@ -6,6 +6,7 @@
 @import '@material/data-table/mdc-data-table';
 @import '@material/top-app-bar/mdc-top-app-bar';
 @import '@material/icon-button/mdc-icon-button';
+@import '@material/list/mdc-list';
 
 body {
   display: flex;
@@ -23,24 +24,10 @@ body {
   @include mdc-top-app-bar-fill-color(#116b9e);
 }
 
-// header {
-//   display: flex;
-//   background-color: hsl(100, 100%, 70%);
-//   flex-direction: row;
-//   justify-content: flex-start;
-//   flex-basis: 10vh;
-
-//   #page-title {
-//     flex-basis: 300px;
-//     background-color: hsl(240, 100%, 80%);
-//     padding-left: 3rem;
-//     flex-shrink: 0;
-//   }
-
-//   nav {
-//     background-color: hsl(60, 100%, 70%);
-//   }
-// }
+.mdc-list-item {
+  // border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 1.75rem;
+}
 
 main {
   display: flex;
@@ -52,16 +39,11 @@ main {
   #players {
     background-color: hsl(0, 0%, 85%);
     flex-basis: 200px;
-    flex-shrink: 0;
     flex-grow: 1;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-
-    h2 {
-      align-self: center;
-      flex-basis: 100%;
-    }
+    align-content: flex-start;
   }
 
   .icon {
@@ -74,22 +56,63 @@ main {
     color: blue;
   }
 
+  p {
+    text-align: center;
+  }
+
   #schedule {
     display: flex;
-    background-color: hsl(180, 100%, 70%);
+    // background-color: hsl(180, 100%, 70%);
+    background-color: white;
     flex-basis: 80%;
     flex-grow: 1;
     flex-direction: column;
     .mdc-data-table {
+      max-width: 100vw;
       // flex-grow: 1;
       flex-basis: 100%;
+    }
+    #next-game {
+      display: none;
+      align-items: stretch;
+      flex-basis: 100%;
+      #competitors {
+        margin-top: 1rem;
+        display: flex;
+        // justify-content: space-around;
+
+        #selected-team {
+          flex-basis: 50%;
+          background-color: rgb(44, 219, 0);
+          display: flex;
+          justify-content: center;
+          a {
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+          }
+        }
+        #opponent-team {
+          flex-basis: 50%;
+          background-color: navy;
+          display: flex;
+          justify-content: center;
+          a {
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+          }
+        }
+      }
     }
   }
 }
 
 footer {
-  background-color: hsl(300, 100%, 80%);
+  background-color: #116b9e;
+  color: white;
   flex-grow: 1;
   text-align: center;
   font-size: 0.8rem;
+  a {
+    color: rgb(115, 230, 245);
+  }
 }
