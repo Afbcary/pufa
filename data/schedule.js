@@ -1,0 +1,122 @@
+export default [
+  {
+    Date: '6/4/2019 (T)',
+    'Win or Loss': 'W',
+    Score: '12',
+    'Opp. Score': '7',
+    Opponent: 'Earth Ninjas',
+    'Self Rtg': '3',
+    'Perf Rtg': '1193',
+    Field: 'Northstar 2',
+    'Game Time': '6:00',
+    Color: 'Black'
+  },
+  {
+    Date: '6/4/2019 (T)',
+    'Win or Loss': 'W',
+    Score: '12',
+    'Opp. Score': '7',
+    Opponent: 'Earth Ninjas',
+    'Self Rtg': '3',
+    'Perf Rtg': '1193',
+    Field: 'Northstar 2',
+    'Game Time': '6:00',
+    Color: 'Black'
+  },
+  {
+    Date: '6/4/2019 (T)',
+    'Win or Loss': 'W',
+    Score: '12',
+    'Opp. Score': '7',
+    Opponent: 'Earth Ninjas',
+    'Self Rtg': '3',
+    'Perf Rtg': '1193',
+    Field: 'Northstar 2',
+    'Game Time': '6:00',
+    Color: 'Black'
+  },
+  {
+    Date: '6/4/2019 (T)',
+    'Win or Loss': 'W',
+    Score: '12',
+    'Opp. Score': '7',
+    Opponent: 'Earth Ninjas',
+    'Self Rtg': '3',
+    'Perf Rtg': '1193',
+    Field: 'Northstar 2',
+    'Game Time': '6:00',
+    Color: 'Black'
+  },
+  {
+    Date: '6/4/2019 (T)',
+    'Win or Loss': 'W',
+    Score: '12',
+    'Opp. Score': '7',
+    Opponent: 'Earth Ninjas',
+    'Self Rtg': '3',
+    'Perf Rtg': '1193',
+    Field: 'Northstar 2',
+    'Game Time': '6:00',
+    Color: 'Black'
+  },
+  {
+    Date: '6/4/2019 (T)',
+    'Win or Loss': 'W',
+    Score: '12',
+    'Opp. Score': '7',
+    Opponent: 'Earth Ninjas',
+    'Self Rtg': '3',
+    'Perf Rtg': '1193',
+    Field: 'Northstar 2',
+    'Game Time': '6:00',
+    Color: 'Black'
+  },
+  {
+    Date: '6/4/2019 (T)',
+    'Win or Loss': 'W',
+    Score: '12',
+    'Opp. Score': '7',
+    Opponent: 'Earth Ninjas',
+    'Self Rtg': '3',
+    'Perf Rtg': '1193',
+    Field: 'Northstar 2',
+    'Game Time': '6:00',
+    Color: 'Black'
+  },
+  {
+    Date: '6/4/2019 (T)',
+    'Win or Loss': 'W',
+    Score: '12',
+    'Opp. Score': '7',
+    Opponent: 'Earth Ninjas',
+    'Self Rtg': '3',
+    'Perf Rtg': '1193',
+    Field: 'Northstar 2',
+    'Game Time': '6:00',
+    Color: 'Black'
+  },
+  {
+    Date: '6/4/2019 (T)',
+    'Win or Loss': 'W',
+    Score: '12',
+    'Opp. Score': '7',
+    Opponent: 'Earth Ninjas',
+    'Self Rtg': '3',
+    'Perf Rtg': '1193',
+    Field: 'Northstar 2',
+    'Game Time': '6:00',
+    Color: 'Black'
+  },
+  {
+    Date: '6/4/2019 (T)',
+    'Win or Loss': 'W',
+    Score: '12',
+    'Opp. Score': '7',
+    Opponent: 'Earth Ninjas',
+    'Self Rtg': '3',
+    'Perf Rtg': '1193',
+    Field: 'Northstar 2',
+    'Game Time': '6:00',
+    Color: 'Black'
+  }
+];

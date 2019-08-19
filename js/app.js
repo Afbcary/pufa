@@ -1,4 +1,5 @@
 import { MDCTabBar } from '@material/tab-bar';
+import schedule from '../data/schedule.js';
 
 const tabBar = new MDCTabBar(document.querySelector('.mdc-tab-bar'));
 tabBar.activateTab(0);
@@ -18,4 +19,20 @@ function showTab(index) {
     scheduleTable.style.display = 'none';
     nextGame.style.display = 'block';
   }
+}
+
+var wrapper = document.getElementById('schedule-cards');
+for (let game of schedule) {
+  var card = document.createElement('card');
+  for (var property in game) {
+    var info = document.createElement('info');
+    var key = document.createElement('key');
+    key.innerText = property;
+    var value = document.createElement('value');
+    value.innerText = game[property];
+    info.appendChild(key);
+    info.appendChild(value);
+    card.appendChild(info);
+  }
+  wrapper.appendChild(card);
 }
